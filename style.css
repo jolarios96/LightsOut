@@ -1,0 +1,59 @@
+:root {
+  --dark-bg-1: #212121;
+  --dark-bg-2: #424242;
+  --dark-bg-3: #636363;
+  --dark-bg-4: #747474;
+  --dark-bg-5: #858585;
+}
+
+html {
+  background-color: var(--dark-bg-1);
+
+  /* margin: 0; */
+}
+
+body {
+  margin: 0;
+}
+
+body > * {
+  margin: 1ex;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+
+  background-color: var(--dark-bg-3);
+}
+
+#header-title {
+  margin-top: 0;
+  padding: 10px 0 10px 10px;
+}
+
+#about {
+  background-color: var(--dark-bg-3);
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  /* Temp Height */
+  height: 50px;
+  margin: 0;
+
+  background-color: var(--dark-bg-3);
+
+  /* Keep if Content does not exceed viewport height */
+  position: absolute;
+  bottom: 0;
+}
+
+#app {
+  width: 500px;
+  height: 500px;
+  background-color: var(--dark-bg-2);
+
+  margin: 0 auto;
+}
