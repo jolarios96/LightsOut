@@ -4,12 +4,14 @@
   --dark-bg-3: #636363;
   --dark-bg-4: #747474;
   --dark-bg-5: #858585;
+
+  --btn-on: white;
+  --btn-off: #424242;
 }
 
 html {
   background-color: var(--dark-bg-1);
   min-height: 100vh;
-  /* margin: 0; */
 }
 
 body {
@@ -25,8 +27,6 @@ body {
 
 header {
   width: 100%;
-  /* margin: 0; */
-
   background-color: var(--dark-bg-3);
 }
 
@@ -56,19 +56,31 @@ footer {
 
 #app {
   width: 100%;
-  /* height: 80%; */
   padding: 50px 0 50px 0;
   background-color: var(--dark-bg-2);
 
   margin: 0 auto;
 }
 
-.container {
-}
-
 #app > .container {
   width: 500px;
   height: 500px;
-  background-color: white;
+  background-color: var(--dark-bg-3);
   margin: 0 auto;
+  padding: 10px;
+
+  display: grid;
+
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+
+  justify-items: center;
+}
+
+#app > .container > .light {
+  height: 99%;
+  width: 99%;
+
+  margin: 0;
+  padding: 0;
 }
